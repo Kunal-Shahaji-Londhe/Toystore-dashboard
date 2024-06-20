@@ -14,7 +14,7 @@ function Categories() {
 
   const fetchCategories = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/v1/categories');
+      const response = await fetch('https://ecommerceapi-2-6l87.onrender.com/api/v1/categories');
       const data = await response.json();
       setCategories(data);
 
@@ -28,7 +28,7 @@ function Categories() {
 
   const fetchCategoryAnalytics = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/v1/analytics/sales-by-category');
+      const response = await fetch('https://ecommerceapi-2-6l87.onrender.com/v1/analytics/sales-by-category');
       const data = await response.json();
       return data;
     } catch (error) {

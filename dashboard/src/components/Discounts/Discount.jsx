@@ -20,7 +20,7 @@ const DiscountComponent = () => {
 
   const fetchDiscounts = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/v1/discounts');
+      const response = await axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/discounts');
       setDiscounts(response.data);
     } catch (error) {
       console.error('Error fetching discounts:', error);

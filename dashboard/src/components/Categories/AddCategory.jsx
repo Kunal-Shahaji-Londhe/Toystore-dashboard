@@ -35,7 +35,7 @@ function AddCategory() {
         formDataToSend.append('icon', formData.icon);
 
         try {
-            const response = await axios.post('http://localhost:3000/api/v1/categories', formDataToSend, {
+            const response = await axios.post('https://ecommerceapi-2-6l87.onrender.com/api/v1/categories', formDataToSend, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

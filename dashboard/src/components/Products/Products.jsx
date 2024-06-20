@@ -14,7 +14,7 @@ function Products() {
 
   useEffect(() => {
     // Fetch products from API
-    fetch('http://localhost:3000/api/v1/products')
+    fetch('https://ecommerceapi-2-6l87.onrender.com/api/v1/products')
       .then(response => response.json())
       .then(data => setProducts(data))
       .catch(error => console.error('Error fetching products:', error));

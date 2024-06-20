@@ -27,7 +27,7 @@ const Login = ({ setIsAuthenticated }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/api/v1/users/login', loginData);
+      const response = await axios.post('https://ecommerceapi-2-6l87.onrender.com/api/v1/users/login', loginData);
 
       console.log('Login successful:', response.data);
       const { token } = response.data;

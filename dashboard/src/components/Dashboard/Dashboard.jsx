@@ -30,15 +30,15 @@ function Dashboard() {
     const fetchData = async () => {
         try {
             const [usersRes, ordersRes, revenueRes, categoriesRes, productsPerCategoryRes, revenuePerCategoryRes, salesByCategoryRes,productSalesRes, inventoryPerformanceRes] = await Promise.all([
-                axios.get('http://localhost:3000/api/v1/analytics/total-users'),
-                axios.get('http://localhost:3000/api/v1/analytics/total-orders'),
-                axios.get('http://localhost:3000/api/v1/analytics/total-sales-revenue'),
-                axios.get('http://localhost:3000/api/v1/analytics/total-categories'),
-                axios.get('http://localhost:3000/api/v1/analytics/products-per-category'),
-                axios.get('http://localhost:3000/api/v1/analytics/revenue-per-category'),
-                axios.get('http://localhost:3000/api/v1/analytics/sales-by-category'),
-                axios.get('http://localhost:3000/api/v1/analytics/product-sales-report'),
-                axios.get('http://localhost:3000/api/v1/analytics/inventory-performance')
+                axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/analytics/total-users'),
+                axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/analytics/total-orders'),
+                axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/analytics/total-sales-revenue'),
+                axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/analytics/total-categories'),
+                axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/analytics/products-per-category'),
+                axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/analytics/revenue-per-category'),
+                axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/analytics/sales-by-category'),
+                axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/analytics/product-sales-report'),
+                axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/analytics/inventory-performance')
             ]);
 
             setTotalUsers(usersRes.data.totalUsers);

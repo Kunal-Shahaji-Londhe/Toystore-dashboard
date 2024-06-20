@@ -34,7 +34,7 @@ function Addproduct() {
     };
 
      //configuration for the Fetch API
-    const url = 'http://localhost:3000/api/v1/products';
+    const url = 'https://ecommerceapi-2-6l87.onrender.com/api/v1/products';
     const bearerToken  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWFiN2VmNGI3M2EwOTVlMzEzMWQxN2MiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MDkwMTU4NDYsImV4cCI6MTcwOTEwMjI0Nn0.3zAjVQVG5j1wE6khODNhucG5RAE2G7A8EYbJOoZmA84'
 
     const formDataToSend = new FormData();

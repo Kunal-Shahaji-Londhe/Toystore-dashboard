@@ -16,7 +16,7 @@ function Orders() {
 
   const fetchOrders = () => {
     // Fetch orders based on date range
-    const url = `http://localhost:3000/api/v1/orders`;
+    const url = `https://ecommerceapi-2-6l87.onrender.com/api/v1/orders`;
     fetch(url)
       .then(response => response.json())
       .then(data => {setOrders(data)

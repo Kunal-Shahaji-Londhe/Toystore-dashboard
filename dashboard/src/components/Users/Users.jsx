@@ -9,7 +9,7 @@ function Users() {
 
   useEffect(() => {
     // Fetch users from API
-    fetch('http://localhost:3000/api/v1/users', {
+    fetch('https://ecommerceapi-2-6l87.onrender.com/api/v1/users', {
       headers: {
         Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWFiN2VmNGI3M2EwOTVlMzEzMWQxN2MiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MTAxNjkzOTIsImV4cCI6MTcxMDI1NTc5Mn0.PFUQ53gxHKnQhbz6FE_VL6gvajdTbMU6eC51Yvvzt5o', // Replace with your actual access token
       },
