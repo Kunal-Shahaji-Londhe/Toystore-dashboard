@@ -61,7 +61,7 @@ function Addproduct() {
     const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWFiN2VmNGI3M2EwOTVlMzEzMWQxN2MiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MDk1NDM3MjIsImV4cCI6MTcwOTYzMDEyMn0.qH5M33W9zKr5DhckrCvSV57n5bkaT3rE9dZbnqBdUjg'; // Replace with your actual bearer token
 
     try {
-      const response = await axios.post('http://localhost:3000/api/v1/products', formDataToSend, {
+      const response = await axios.post('https://ecommerceapi-2-6l87.onrender.com/api/v1/products', formDataToSend, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',

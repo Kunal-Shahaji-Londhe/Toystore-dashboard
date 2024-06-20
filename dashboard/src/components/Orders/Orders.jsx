@@ -32,7 +32,7 @@ function Orders() {
 
   const handleStatusChange = async (orderId, newStatus) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/v1/orders/${orderId}`, {
+      const response = await fetch(`https://ecommerceapi-2-6l87.onrender.com/api/v1/orders/${orderId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
