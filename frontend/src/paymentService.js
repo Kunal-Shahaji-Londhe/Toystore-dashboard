@@ -1,5 +1,5 @@
 export const initiatePayment = async (orderAmount, productNames) => {
-    const backendUrl = "http://localhost:3000/process_payment"; // Replace with your actual backend URL
+    const backendUrl = "https://ecommerceapi-2-6l87.onrender.com/process_payment"; // Replace with your actual backend URL
 
     try {
         const response = await fetch(backendUrl, {
