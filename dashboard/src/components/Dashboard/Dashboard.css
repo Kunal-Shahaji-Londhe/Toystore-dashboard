@@ -1,0 +1,26 @@
+.container {
+    padding: 20px;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.chart-container {
+    margin-top: 20px;
+}
+
+.chart-title {
+    margin-bottom: 10px;
+}
