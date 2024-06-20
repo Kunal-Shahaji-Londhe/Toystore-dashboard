@@ -18,7 +18,7 @@ function Review() {
 
   const fetchReviews = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/v1/reviews/${id}/reviews`, {
+      const response = await axios.get(`https://ecommerceapi-2-6l87.onrender.com/api/v1/reviews/${id}/reviews`, {
         headers: {
           Authorization: `Bearer ${token}` // Include bearer token in the request headers
         }
@@ -46,7 +46,7 @@ function Review() {
       }
 
       // Make a POST request to submit the review
-      await axios.post(`http://localhost:3000/api/v1/reviews`, {
+      await axios.post(`https://ecommerceapi-2-6l87.onrender.com/api/v1/reviews`, {
         userId: user_id,
         productId: id,
         rating: rating,

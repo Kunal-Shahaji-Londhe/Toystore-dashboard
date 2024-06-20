@@ -11,7 +11,7 @@ const Category = () => {
 
     useEffect(() => {
         //make a request to your api
-        fetch(`http://localhost:3000/api/v1/products//byCategory/${id}`)
+        fetch(`https://ecommerceapi-2-6l87.onrender.com/api/v1/products//byCategory/${id}`)
         .then(response => response.json())
         .then(data => setProducts(data))
         .catch(error => console.error('Error fetching data:', error))

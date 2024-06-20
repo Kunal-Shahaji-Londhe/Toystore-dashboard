@@ -48,7 +48,7 @@ const SingleProduct = () => {
 
     useEffect(() => {
         //make a request to your api
-        fetch(`http://localhost:3000/api/v1/products/${id}`)
+        fetch(`https://ecommerceapi-2-6l87.onrender.com/api/v1/products/${id}`)
         .then(response => response.json())
         .then(data => setProduct(data))
         .catch(error => console.error('Error fetching data:', error))

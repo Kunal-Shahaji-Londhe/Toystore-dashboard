@@ -13,7 +13,7 @@ function MyPurchaseComponent() {
 
         const fetchUserOrders = async (userId, setOrders, setLoading) => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/v1/orders/get/userorders/${userId}`);
+                const response = await axios.get(`https://ecommerceapi-2-6l87.onrender.com/api/v1/orders/get/userorders/${userId}`);
                 const filteredOrders = response.data.userOrderList.filter(order => order.status !== 'canceled')
                 setOrders(filteredOrders);
                 setLoading(false);
@@ -39,7 +39,7 @@ function MyPurchaseComponent() {
 
     const handleCancelOrder = async (orderId) => {
         try {
-            await axios.put(`http://localhost:3000/api/v1/orders/cancel/${orderId}`, { "status": "canceled" });
+            await axios.put(`https://ecommerceapi-2-6l87.onrender.com/api/v1/orders/cancel/${orderId}`, { "status": "canceled" });
             fetchUserOrders(userId, setOrders, setLoading)
             toast.success('Order cancelled successfully!');
         } catch (error) {
@@ -55,10 +55,10 @@ function MyPurchaseComponent() {
     const handleReturnFormSubmit = async (event) => {
         event.preventDefault();
         try {
-            await axios.post(`http://localhost:3000/api/v1/return/return-orders`, { orderId: returningOrderId,userId: userId, reason: returnReason });
+            await axios.post(`https://ecommerceapi-2-6l87.onrender.com/api/v1/return/return-orders`, { orderId: returningOrderId,userId: userId, reason: returnReason });
             // Update the order status to "Returned"
             fetchUserOrders(userId, setOrders, setLoading)
-            await axios.put(`http://localhost:3000/api/v1/orders/${returningOrderId}`, { "status": "Returned" });
+            await axios.put(`https://ecommerceapi-2-6l87.onrender.com/api/v1/orders/${returningOrderId}`, { "status": "Returned" });
             toast.success('Order returned successfully!');
             setReturningOrderId(null);
             setReturnReason('');

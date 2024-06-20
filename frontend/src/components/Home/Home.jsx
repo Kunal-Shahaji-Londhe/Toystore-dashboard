@@ -16,7 +16,7 @@ const Home = () => {
 
     const getCategories = () => {
           //make a request to api
-          fetch('http://localhost:3000/api/v1/categories')
+          fetch('https://ecommerceapi-2-6l87.onrender.com/api/v1/categories')
           .then(response => response.json())
           .then(data => setCategories(data))
           .catch(error => console.log('Error fetching category data:', error))
@@ -24,7 +24,7 @@ const Home = () => {
 
     const getProducts = () => {
          //make a request to your api
-         fetch('http://localhost:3000/api/v1/products')
+         fetch('https://ecommerceapi-2-6l87.onrender.com/api/v1/products')
          .then(response => response.json())
          .then(data => setProducts(data))
          .catch(error => console.error('Error fetching data:', error))

@@ -61,7 +61,7 @@ const Cart = ({setShowCart}) => {
             };
 
             const response = await axios.post(
-                "http://localhost:3000/api/v1/orders",
+                "https://ecommerceapi-2-6l87.onrender.com/api/v1/orders",
                 orderPayload
             );
 

@@ -9,7 +9,7 @@ export const DiscountProvider = ({ children }) => {
 
   useEffect(() => {
     // Fetch discounts from your backend
-    fetch(`http://localhost:3000/api/v1/discounts`)
+    fetch(`https://ecommerceapi-2-6l87.onrender.com/api/v1/discounts`)
         .then(response => response.json())
       .then(data => setDiscounts(data))
       .catch(error => console.error('Error fetching discounts:', error));

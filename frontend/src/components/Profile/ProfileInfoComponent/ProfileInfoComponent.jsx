@@ -34,7 +34,7 @@ const ProfileInfoComponent = () => {
   const handleSaveClick = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/v1/users/${user.user._id}`,
+        `https://ecommerceapi-2-6l87.onrender.com/api/v1/users/${user.user._id}`,
         userInfo,
         {
           headers: {
