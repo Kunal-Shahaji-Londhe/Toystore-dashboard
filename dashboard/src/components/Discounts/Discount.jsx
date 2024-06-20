@@ -29,7 +29,7 @@ const DiscountComponent = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/v1/categories');
+      const response = await axios.get('https://ecommerceapi-2-6l87.onrender.com/api/v1/categories');
       setCategories(response.data);
     } catch (error) {
       console.error('Error fetching categories:', error);
@@ -43,7 +43,7 @@ const DiscountComponent = () => {
 
   const handleCreateDiscount = async () => {
     try {
-      await axios.post('http://localhost:3000/api/v1/discounts', newDiscount);
+      await axios.post('https://ecommerceapi-2-6l87.onrender.com/api/v1/discounts', newDiscount);
       fetchDiscounts();
       toast.success('Discount created successfully');
     } catch (error) {
